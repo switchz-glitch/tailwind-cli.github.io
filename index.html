@@ -1,0 +1,551 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="./output.css" rel="stylesheet">
+</head>
+<body class="bg-[#faf9f7]">
+<!-- NavBar -->
+    <!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="bg-black/50">
+
+
+  <header class="relative bg-white">
+    <p class="flex h-10 items-center justify-center bg-black px-4 text-sm font-medium text-white sm:px-6 lg:px-8">Get free delivery on orders over $100</p>
+
+    <nav aria-label="Top" class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+      <div class="border-b border-gray-200">
+        <div class="flex h-16 items-center">
+          <button type="button" command="show-modal" commandfor="mobile-menu" class="relative rounded-md bg-white p-2 text-gray-400 lg:hidden">
+            <span class="absolute -inset-0.5"></span>
+            <span class="sr-only">Open menu</span>
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+              <path d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+
+          <!-- Logo -->
+          <div class="ml-4 flex lg:ml-0">
+            <a href="#">
+              <span class="sr-only">Your Company</span>
+              <img src="https://tailwindcss.com/plus-assets/img/logos/mark.svg?color=indigo&shade=600" alt="" class="h-8 w-auto" />
+            </a>
+          </div>
+
+          <!-- Flyout menus -->
+          <el-popover-group class="group/popover-group hidden lg:ml-8 lg:block lg:self-stretch">
+            <div class="flex h-full space-x-8">
+              <div class="group/popover flex">
+                <div class="relative flex">
+                  <button popovertarget="desktop-menu-women" class="relative flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out group-not-has-open/popover:text-gray-700 group-has-open/popover:text-indigo-600 group-not-has-open/popover:hover:text-gray-800">
+                    Women
+                    <span aria-hidden="true" class="absolute inset-x-0 -bottom-px z-30 h-0.5 bg-transparent duration-200 ease-in group-has-open/popover:bg-indigo-600 group-has-open/popover-group:duration-150 group-has-open/popover-group:ease-out"></span>
+                  </button>
+                </div>
+                <el-popover id="desktop-menu-women" anchor="bottom" popover class="w-full overflow-visible bg-white text-sm text-gray-500 transition transition-discrete [--anchor-gap:1px] backdrop:bg-transparent open:block data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+                  <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
+                  <div aria-hidden="true" class="absolute inset-0 top-1/2 bg-white shadow-sm"></div>
+                  
+                </el-popover>
+              </div>
+              <div class="group/popover flex">
+                <div class="relative flex">
+                  <button popovertarget="desktop-menu-men" class="relative flex items-center justify-center text-sm font-medium transition-colors duration-200 ease-out group-not-has-open/popover:text-gray-700 group-has-open/popover:text-indigo-600 group-not-has-open/popover:hover:text-gray-800">
+                    Men
+                    <span aria-hidden="true" class="absolute inset-x-0 -bottom-px z-30 h-0.5 bg-transparent duration-200 ease-in group-has-open/popover:bg-indigo-600 group-has-open/popover-group:duration-150 group-has-open/popover-group:ease-out"></span>
+                  </button>
+                </div>
+                <el-popover id="desktop-menu-men" anchor="bottom" popover class="w-full overflow-visible bg-white text-sm text-gray-500 transition transition-discrete [--anchor-gap:1px] backdrop:bg-transparent open:block data-closed:opacity-0 data-enter:duration-200 data-enter:ease-out data-leave:duration-150 data-leave:ease-in">
+                  <!-- Presentational element used to render the bottom shadow, if we put the shadow on the actual panel it pokes out the top, so we use this shorter element to hide the top of the shadow -->
+                  <div aria-hidden="true" class="absolute inset-0 top-1/2 bg-white shadow-sm"></div>
+                  <div class="relative bg-white">
+                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                      <div class="grid grid-cols-2 gap-x-8 gap-y-10 py-16">
+                        <div class="col-start-2 grid grid-cols-2 gap-x-8">
+                          <div class="group relative text-base sm:text-sm">
+                            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg" alt="Drawstring top with elastic loop closure and textured interior padding." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                            <a href="#" class="mt-6 block font-medium text-gray-900">
+                              <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                              New Arrivals
+                            </a>
+                            <p aria-hidden="true" class="mt-1">Shop now</p>
+                          </div>
+                          <div class="group relative text-base sm:text-sm">
+                            <img src="https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-02-image-card-06.jpg" alt="Three shirts in gray, white, and blue arranged on table with same line drawing of hands and shapes overlapping on front of shirt." class="aspect-square w-full rounded-lg bg-gray-100 object-cover group-hover:opacity-75" />
+                            <a href="#" class="mt-6 block font-medium text-gray-900">
+                              <span aria-hidden="true" class="absolute inset-0 z-10"></span>
+                              Artwork Tees
+                            </a>
+                            <p aria-hidden="true" class="mt-1">Shop now</p>
+                          </div>
+                        </div>
+                        <div class="row-start-1 grid grid-cols-3 gap-x-8 gap-y-10 text-sm">
+                          <div>
+                            <p id="Clothing-heading" class="font-medium text-gray-900">Clothing</p>
+                            <ul role="list" aria-labelledby="Clothing-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Tops</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Pants</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Sweaters</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">T-Shirts</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Jackets</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Activewear</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Browse All</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <p id="Accessories-heading" class="font-medium text-gray-900">Accessories</p>
+                            <ul role="list" aria-labelledby="Accessories-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Watches</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Wallets</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Bags</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Sunglasses</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Hats</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Belts</a>
+                              </li>
+                            </ul>
+                          </div>
+                          <div>
+                            <p id="Brands-heading" class="font-medium text-gray-900">Brands</p>
+                            <ul role="list" aria-labelledby="Brands-heading" class="mt-6 space-y-6 sm:mt-4 sm:space-y-4">
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Re-Arranged</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Counterfeit</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">Full Nelson</a>
+                              </li>
+                              <li class="flex">
+                                <a href="#" class="hover:text-gray-800">My Way</a>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </el-popover>
+              </div>
+
+              <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Company</a>
+              <a href="#" class="flex items-center text-sm font-medium text-gray-700 hover:text-gray-800">Stores</a>
+            </div>
+          </el-popover-group>
+
+          <div class="ml-auto flex items-center">
+            <div class="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
+              <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Sign in</a>
+              <span aria-hidden="true" class="h-6 w-px bg-gray-200"></span>
+              <a href="#" class="text-sm font-medium text-gray-700 hover:text-gray-800">Create account</a>
+            </div>
+
+            <div class="hidden lg:ml-8 lg:flex">
+              <a href="#" class="flex items-center text-gray-700 hover:text-gray-800">
+                <img src="https://tailwindcss.com/plus-assets/img/flags/flag-canada.svg" alt="" class="block h-auto w-5 shrink-0" />
+                <span class="ml-3 block text-sm font-medium">CAD</span>
+                <span class="sr-only">, change currency</span>
+              </a>
+            </div>
+
+            <!-- Search -->
+            <div class="flex lg:ml-6">
+              <a href="#" class="p-2 text-gray-400 hover:text-gray-500">
+                <span class="sr-only">Search</span>
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6">
+                  <path d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+              </a>
+            </div>
+
+            <!-- Cart -->
+            <div class="ml-4 flow-root lg:ml-6">
+              <a href="#" class="group -m-2 flex items-center p-2">
+                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" data-slot="icon" aria-hidden="true" class="size-6 shrink-0 text-gray-400 group-hover:text-gray-500">
+                  <path d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" stroke-linecap="round" stroke-linejoin="round" />
+                </svg>
+                <span class="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">0</span>
+                <span class="sr-only">items in cart, view bag</span>
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+  </header>
+</div>
+
+
+
+<!-- Hero Section -->
+<!-- Include this script tag or install `@tailwindplus/elements` via npm: -->
+<!-- <script src="https://cdn.jsdelivr.net/npm/@tailwindplus/elements@1" type="module"></script> -->
+<div class="">
+
+  <div class="relative isolate px-6 pt-14 lg:px-8">
+ <img src="bg1.jpg" alt="" class="absolute inset-0 -z-10 h-full w-full object-cover backdrop-opacity-40 rounded-b-4xl" />
+    <div class="mx-auto max-w-3xl py-32 sm:py-48 lg:py-56">
+      <div class="text-center">
+        <h1 class="text-4xl font-bold tracking-tight text-white sm:text-6xl font-serif">Welcome to Our Store</h1>
+        <p class="mt-6 text-lg leading-8 text-gray-300">Discover the latest trends in fashion and shop your favorite styles with us.</p>
+        <div class="mt-10 flex items-center justify-center gap-x-6">
+          <a href="#" class="rounded-md  px-4 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-gray-600 focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 ">Shop Now</a>
+          <a href="#" class="text-sm font-semibold leading-6 text-white">Learn more <span aria-hidden="true">→</span></a>
+        </div>
+      </div>
+  </div>
+</div>
+
+
+<!-- About us -->
+<!-- ABOUT / HOME SECTION -->
+<section class="relative  overflow-hidden py-24">
+
+
+  <!-- Section Heading -->
+  <div class="text-center mb-20 relative z-10">
+    <h2 class="text-6xl font-serif tracking-wide text-gray-900">
+      Our Story
+    </h2>
+    <p class="mt-3 text-sm uppercase tracking-widest text-gray-500">
+      Crafted with passion & love
+    </p>
+  </div>
+
+  <!-- Content Wrapper -->
+  <div class="max-w-7xl mx-auto px-6 flex flex-col lg:flex-row items-center gap-16 relative z-10">
+
+    <!-- Image Cluster -->
+    <div class="relative flex-shrink-0">
+
+      <!-- Small Image 1 -->
+      <img
+        class="absolute -top-6 left-6 w-20 h-20 sm:w-28 sm:h-28 rounded-full ring-4 ring-white shadow-lg
+        rotate-6 hover:rotate-0 hover:scale-110 transition-all duration-500 z-20"
+        src="https://plus.unsplash.com/premium_photo-1680303989902-84beefe8d9bc?w=500"
+        alt="Coffee detail">
+
+      <!-- Small Image 2 -->
+      <img
+        class="absolute top-40 -left-10 w-20 h-20 sm:w-28 sm:h-28 rounded-full ring-4 ring-white shadow-lg
+        -rotate-6 hover:rotate-0 hover:scale-110 transition-all duration-500 z-20"
+        src="https://images.unsplash.com/photo-1558281033-19cead6981dc"
+        alt="Coffee beans">
+
+      <!-- Small Image 3 -->
+      <img
+        class="absolute bottom-6 left-10 w-20 h-20 sm:w-28 sm:h-28 rounded-full ring-4 ring-white shadow-lg
+        rotate-6 hover:rotate-0 hover:scale-110 transition-all duration-500 z-20"
+        src="https://images.unsplash.com/photo-1490750967868-88aa4486c946"
+        alt="Cafe vibe">
+
+      <!-- Main Image -->
+      <img
+        class="relative w-64 h-64 sm:w-96 sm:h-96 object-cover rounded-full ring-8 ring-white shadow-2xl
+        hover:scale-[1.03] transition-transform duration-700"
+        src="https://media.istockphoto.com/id/1061010318/photo/shot-of-a-beautiful-small-bar.webp?a=1&s=612x612&w=0&k=20&c=jn-2lPNk477frfWbLQBEirSDonDHwpkTWfDgUF2ioVw="
+        alt="Coffee shop interior">
+    </div>
+
+    <!-- Text Content -->
+    <div
+      class="bg-white/80 backdrop-blur-md border border-gray-200 rounded-2xl shadow-lg
+      px-8 py-12 max-w-xl text-center">
+
+      <h3 class="text-4xl font-serif text-gray-900 mb-6">
+        Welcome to Petal Haven
+      </h3>
+
+      <p class="text-gray-700 leading-relaxed text-lg mb-6">
+        At Petal Haven, we believe in the magic of handcrafted experiences.
+        Every cup is brewed with care, passion, and premium ingredients to
+        create moments worth savoring.
+      </p>
+
+      <p class="text-gray-600 text-base leading-relaxed">
+        Whether you're here for a peaceful morning coffee or an evening
+        conversation, our cozy ambiance and warm flavors are designed to make
+        you feel at home.
+      </p>
+
+      <!-- CTA Button -->
+      <button
+        class="mt-8 px-8 py-4 bg-gradient-to-r from-gray-900 to-black
+        text-white uppercase tracking-wider text-sm
+        hover:scale-105 transition-transform duration-300">
+        Discover More
+      </button>
+    </div>
+
+  </div>
+</section>
+
+<!-- Menu -->
+<!-- PRODUCT / MENU SECTION -->
+<section class="bg-[#faf9f7] py-24">
+  
+  <!-- Section Heading -->
+  <div class="text-center mb-16">
+    <h2 class="text-5xl font-serif text-gray-900">
+      Our Best Sellers
+    </h2>
+    <p class="mt-3 text-gray-600 text-lg">
+      Handcrafted coffee & freshly baked delights
+    </p>
+  </div>
+
+  <!-- Products Grid -->
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+    <!-- Product Card -->
+    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+      <img
+        src="https://images.unsplash.com/photo-1509042239860-f550ce710b93"
+        alt="Espresso"
+        class="w-full h-60 object-cover rounded-t-2xl">
+
+      <div class="p-6 text-center">
+        <h3 class="text-2xl font-serif text-gray-900">Espresso</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Rich & bold single-shot coffee
+        </p>
+
+        <div class="mt-4 flex items-center justify-center gap-4">
+          <span class="text-lg font-semibold text-gray-900">$3.50</span>
+          <button class="px-4 py-2 border border-gray-900 text-gray-900 text-sm
+          hover:bg-gray-900 hover:text-white transition-colors">
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+      <img
+        src="https://images.unsplash.com/photo-1511920170033-f8396924c348"
+        alt="Cappuccino"
+        class="w-full h-60 object-cover rounded-t-2xl">
+
+      <div class="p-6 text-center">
+        <h3 class="text-2xl font-serif text-gray-900">Cappuccino</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Smooth espresso with creamy foam
+        </p>
+
+        <div class="mt-4 flex items-center justify-center gap-4">
+          <span class="text-lg font-semibold text-gray-900">$4.20</span>
+          <button class="px-4 py-2 border border-gray-900 text-gray-900 text-sm
+          hover:bg-gray-900 hover:text-white transition-colors">
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+      <img
+        src="https://images.unsplash.com/photo-1523942839745-7848d6a7d3a8"
+        alt="Latte"
+        class="w-full h-60 object-cover rounded-t-2xl">
+
+      <div class="p-6 text-center">
+        <h3 class="text-2xl font-serif text-gray-900">Latte</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Creamy milk blended with espresso
+        </p>
+
+        <div class="mt-4 flex items-center justify-center gap-4">
+          <span class="text-lg font-semibold text-gray-900">$4.80</span>
+          <button class="px-4 py-2 border border-gray-900 text-gray-900 text-sm
+          hover:bg-gray-900 hover:text-white transition-colors">
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+    <!-- Product Card -->
+    <div class="bg-white rounded-2xl shadow-md hover:shadow-xl transition-shadow duration-300">
+      <img
+        src="https://images.unsplash.com/photo-1504754524776-8f4f37790ca0"
+        alt="Mocha"
+        class="w-full h-60 object-cover rounded-t-2xl">
+
+      <div class="p-6 text-center">
+        <h3 class="text-2xl font-serif text-gray-900">Mocha</h3>
+        <p class="text-gray-600 text-sm mt-2">
+          Chocolate-infused espresso delight
+        </p>
+
+        <div class="mt-4 flex items-center justify-center gap-4">
+          <span class="text-lg font-semibold text-gray-900">$5.20</span>
+          <button class="px-4 py-2 border border-gray-900 text-gray-900 text-sm
+          hover:bg-gray-900 hover:text-white transition-colors">
+            Order
+          </button>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+
+
+<!-- Gallery Section -->
+<div class="text-7xl text-black  font-serif text-center py-10">Gallery</div>
+
+<div class="grid grid-cols-2 md:grid-cols-3 gap-3 mx-44">
+    <div class="grid gap-3 ">
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://images.unsplash.com/photo-1522737799611-b1119d527dc4?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-1.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-2.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-3">
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://plus.unsplash.com/premium_photo-1674327105074-46dd8319164b?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8Y29mZmVlfGVufDB8MHwwfHx8MA%3D%3D" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-4.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-5.jpg" alt="">
+        </div>
+    </div>
+    <div class="grid gap-3">
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://plus.unsplash.com/premium_photo-1723672888715-d0bcf7a5edee?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1yZWxhdGVkfDM0fHx8ZW58MHx8fHx8" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-7.jpg" alt="">
+        </div>
+        <div>
+            <img class="h-auto max-w-full rounded-base" src="https://flowbite.s3.amazonaws.com/docs/gallery/masonry/image-8.jpg" alt="">
+        </div>
+    </div>
+ 
+        </div>
+    </div>
+</div>
+
+
+<!-- footer -->
+
+<!-- FOOTER -->
+<footer class="bg-[#1f1f1f] text-gray-300 pt-20">
+  
+  <!-- Footer Content -->
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+
+    <!-- Brand -->
+    <div>
+      <h3 class="text-3xl font-serif text-white mb-4">
+        Petal Haven
+      </h3>
+      <p class="text-gray-400 text-sm leading-relaxed">
+        A cozy place where handcrafted coffee meets warm conversations.
+        Experience rich flavors, calm vibes, and moments worth savoring.
+      </p>
+    </div>
+
+    <!-- Quick Links -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">
+        Quick Links
+      </h4>
+      <ul class="space-y-3 text-sm">
+        <li><a href="#" class="hover:text-white transition">Home</a></li>
+        <li><a href="#" class="hover:text-white transition">About</a></li>
+        <li><a href="#" class="hover:text-white transition">Menu</a></li>
+        <li><a href="#" class="hover:text-white transition">Gallery</a></li>
+      </ul>
+    </div>
+
+    <!-- Opening Hours -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">
+        Opening Hours
+      </h4>
+      <ul class="space-y-3 text-sm text-gray-400">
+        <li>Mon – Fri: 8:00 AM – 10:00 PM</li>
+        <li>Saturday: 9:00 AM – 11:00 PM</li>
+        <li>Sunday: 9:00 AM – 9:00 PM</li>
+      </ul>
+    </div>
+
+    <!-- Contact -->
+    <div>
+      <h4 class="text-lg font-semibold text-white mb-4">
+        Contact Us
+      </h4>
+      <ul class="space-y-3 text-sm text-gray-400">
+        <li>📍 123 Brew Street, City</li>
+        <li>📞 +1 (234) 567-890</li>
+        <li>✉️ hello@petalhaven.com</li>
+      </ul>
+    </div>
+
+  </div>
+
+  <!-- Divider -->
+  <div class="border-t border-gray-700 mt-16"></div>
+
+  <!-- Bottom Bar -->
+  <div class="max-w-7xl mx-auto px-6 py-6 flex flex-col md:flex-row items-center justify-between text-sm text-gray-500">
+
+    <p>© 2025 Petal Haven. All rights reserved.</p>
+
+    <!-- Social Icons -->
+    <div class="flex space-x-6 mt-4 md:mt-0">
+      <a href="#" class="hover:text-white transition">Instagram</a>
+      <a href="#" class="hover:text-white transition">Facebook</a>
+      <a href="#" class="hover:text-white transition">Twitter</a>
+    </div>
+
+  </div>
+
+</footer>
+
+
+
+    
+</body>
+</html>
