@@ -425,7 +425,12 @@
 
 
 <!-- Gallery Section -->
-<div class="text-7xl text-black  font-serif text-center py-10">Gallery</div>
+  <div class="text-center mb-16">
+    <h2 class="text-5xl font-serif text-gray-900">Gallery</h2>
+    <p class="mt-3 text-gray-600 text-lg">
+      We'd love to share some moments from our café with you
+    </p>
+  </div>
 
 <div class="grid grid-cols-2 md:grid-cols-3 gap-3 mx-44">
     <div class="grid gap-3 ">
@@ -467,7 +472,139 @@
 </div>
 
 
-<!-- footer -->
+<!-- REVIEW / TESTIMONIALS SECTION -->
+<section class="bg-[#faf9f7] py-24">
+  <!-- Section Heading -->
+  <div class="text-center mb-16">
+    <h2 class="text-5xl font-serif text-gray-900">What Our Customers Say</h2>
+    <p class="mt-3 text-gray-600 text-lg">Experience the love brewed in every cup</p>
+  </div>
+
+  <!-- Reviews Grid -->
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-10">
+
+    <!-- Review Card -->
+    <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300">
+      <div class="flex items-center gap-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/women/68.jpg" 
+             alt="Customer 1" 
+             class="w-14 h-14 rounded-full object-cover ring-2 ring-gray-200">
+        <div>
+          <h4 class="font-semibold text-gray-900">Emily R.</h4>
+          <p class="text-gray-500 text-sm">Coffee Enthusiast</p>
+        </div>
+      </div>
+      <p class="text-gray-700 text-base leading-relaxed">
+        "Absolutely love the espresso here! Cozy atmosphere and friendly staff.  
+        A must-visit café for every coffee lover."
+      </p>
+      <div class="mt-4 flex space-x-1 text-yellow-400">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+
+    <!-- Review Card -->
+    <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300">
+      <div class="flex items-center gap-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/men/32.jpg" 
+             alt="Customer 2" 
+             class="w-14 h-14 rounded-full object-cover ring-2 ring-gray-200">
+        <div>
+          <h4 class="font-semibold text-gray-900">Michael S.</h4>
+          <p class="text-gray-500 text-sm">Barista Aficionado</p>
+        </div>
+      </div>
+      <p class="text-gray-700 text-base leading-relaxed">
+        "Petal Haven serves the creamiest cappuccinos.  
+        Love the vibes and the cozy corners to work or relax."
+      </p>
+      <div class="mt-4 flex space-x-1 text-yellow-400">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>☆</span>
+      </div>
+    </div>
+
+    <!-- Review Card -->
+    <div class="bg-white rounded-2xl shadow-md p-8 hover:shadow-xl transition-shadow duration-300">
+      <div class="flex items-center gap-4 mb-4">
+        <img src="https://randomuser.me/api/portraits/women/45.jpg" 
+             alt="Customer 3" 
+             class="w-14 h-14 rounded-full object-cover ring-2 ring-gray-200">
+        <div>
+          <h4 class="font-semibold text-gray-900">Sophie L.</h4>
+          <p class="text-gray-500 text-sm">Coffee Lover</p>
+        </div>
+      </div>
+      <p class="text-gray-700 text-base leading-relaxed">
+        "Their lattes are art in a cup! The atmosphere is so relaxing and perfect for brunch."
+      </p>
+      <div class="mt-4 flex space-x-1 text-yellow-400">
+        <span>★</span><span>★</span><span>★</span><span>★</span><span>★</span>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+
+<!-- CONTACT SECTION -->
+<section class="bg-[#faf9f7] py-24">
+  <!-- Section Heading -->
+  <div class="text-center mb-16">
+    <h2 class="text-5xl font-serif text-gray-900">Get In Touch</h2>
+    <p class="mt-3 text-gray-600 text-lg">
+      We'd love to hear from you! Visit, call, or send us a message.
+    </p>
+  </div>
+
+  <!-- Contact Content -->
+  <div class="max-w-7xl mx-auto px-6 grid grid-cols-1 lg:grid-cols-2 gap-12">
+
+    <!-- Contact Info -->
+    <div class="space-y-8">
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Address</h3>
+        <p class="text-gray-600">123 Brew Street, Coffee City, 45678</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Phone</h3>
+        <p class="text-gray-600">+1 (234) 567-890</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Email</h3>
+        <p class="text-gray-600">hello@petalhaven.com</p>
+      </div>
+      <div>
+        <h3 class="text-2xl font-semibold text-gray-900 mb-2">Opening Hours</h3>
+        <p class="text-gray-600">Mon–Fri: 8 AM – 10 PM <br> Sat–Sun: 9 AM – 11 PM</p>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <form class="bg-white rounded-2xl shadow-md p-8 space-y-6">
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="name">Name</label>
+        <input type="text" id="name" placeholder="Your Name"
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-900">
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="email">Email</label>
+        <input type="email" id="email" placeholder="Your Email"
+               class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-900">
+      </div>
+      <div>
+        <label class="block text-gray-700 font-medium mb-2" for="message">Message</label>
+        <textarea id="message" rows="5" placeholder="Your Message"
+                  class="w-full border border-gray-300 rounded-lg px-4 py-2 focus:outline-none focus:ring-2 focus:ring-gray-900"></textarea>
+      </div>
+      <button type="submit"
+              class="w-full py-3 bg-gray-900 text-white font-semibold rounded-lg hover:bg-black transition-colors">
+        Send Message
+      </button>
+    </form>
+
+  </div>
+</section>
+
 
 <!-- FOOTER -->
 <footer class="bg-[#1f1f1f] text-gray-300 pt-20">
