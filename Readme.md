@@ -32,3 +32,13 @@ Enter
 5. Create a index.html and input.html
 6. Add style link in  <link href="./output.css" rel="stylesheet"> in index.html
 7. npm run start paste this command in terminal 
+
+
+
+<h1>Git Branch Command</h1>
+git branch -- how many branch in repo
+git branch <branch name>
+ex. git branch devlopment
+git branch
+git checkout <branch name>
+ex.git checkout development
